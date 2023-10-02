@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+header{
+    background-color:#060126;
+    font-family: 'Roboto',normal;
+    /* width: 100%; */
+    display: flex;
+    height: 6.25rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+
+}
+.logo{
+    width: 80px;
+    margin-top: .125rem;
+}
+.logo img{
+    width: 100%;
+}
+.navbar div a img{
+    width: 80px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: .625rem;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #F2F2F2;
+} 
+body{
+    background-color:#F2F2F2 ;
+    font-family: 'Roboto',normal;
+}
+
+footer{
+    background-color:#060126 ;
+    height: 12.5rem;
+}
+
+footer a{
+    color: #F2F2F2;
+}
+
+.common {
+    background-color: #636AF2;
+    height: 7rem;
+}
+.grids{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(4, 1fr) ; /*12 cols max*/
+    grid-template-areas: 
+    "section1 section1 section2 section2"
+    "section3 section3 section4 section4"
+    "section5 section5 section6 section6" 
+    ;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1{
+    grid-area: section1;
+    width: 100%;
+    background-color: #636AF2;
+    align-content:baseline;
+    font-size: 3.75rem;
+    border-radius: 2%;
+}
+.section2{
+    grid-area: section2;
+}
+.section2 img{
+    width: 100%;
+    border-radius: 2%;
+}
+.section3{
+    grid-area: section3;
+    font-size: 1rem;
+    border-radius: 2%;
+}
+.section4{
+    grid-area: section4;
+    border-radius: 2%;
+}
+.section4 img{
+    border-radius: 2%;
+    width: 100%;
+}
+.section5{
+    grid-area: section5;
+}
+.section5 img{
+    width: 100%;
+    border-radius: 2%;
+}
+.section6{
+    grid-area: section6;
+    border-radius: 2%;
+}
+
+.products-container{
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.cards-products{
+    width: 100%;
+    height: 9.375rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;  
+    margin-bottom: 1rem;
+}
+
+
+.main-content-home button a{
+    text-decoration: none;
+    color: #060126;
+    font-size: 1rem;
+}
+
+.container-cards-one{
+    display: flex;
+    justify-content: center     ;
+}
+.container-cards-two{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.container-cards-three{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-around;
+}
+
+.card{
+    width: 50%;
+    height: 18.75rem;
+    overflow: hidden;
+    margin-bottom: .625rem;
+}
+
+.main-banner-image{
+    width: 50%;
+    margin-bottom: .625rem;
+}
+.container-cards-two img{
+    width: 50%;
+    margin-bottom: .625rem;
+}
+.container-cards-three img{
+    width: 50%;
+    margin-bottom: .625rem;
+}
+
+.container-cards{
+    display: flex;
+    width: 100%;
+    height: 43.75rem;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    align-items: center; 
+    
+}
+.card{
+    width: 21.875rem;
+    height: 25rem   ;
+    overflow: hidden;
+    box-shadow: 2px 2px .625rem rgba(128, 128, 128, 0.166);
+    margin-bottom: .3125rem;
+    position: relative;
+    
+}
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 425px){
+    .navbar li a{
+        font-size: 1rem;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        display:none;
+    }
+    .grids{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "section1" 
+        "section2"
+        "section3"
+        "section5"
+        "section6" 
+        ;
+        align-items: center;
+        justify-content: center;
+    }
+    .section1{
+        background-color: #636AF2;
+        font-size: auto;
+        border-radius: 0%;
+    }
+    
+    .section4{
+        display: none;
+    }
+    
+
+    .footer{
+        background-color:#060126 ;
+        height: 1.875rem;
+    }
+
+    .cards-products{
+        width: 100%;
+        height: 9.375rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items:flex-end;  
+        margin-bottom: 1rem;
+    }
+}

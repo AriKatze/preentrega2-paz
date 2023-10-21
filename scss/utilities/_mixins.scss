@@ -1,0 +1,8 @@
+@mixin grid($gridarea,$border, $fontsize, $width, $background) {
+    grid-area: $gridarea;
+    border-radius:$border;
+    font-size: $fontsize;
+    width: $width;
+    align-content: $align;
+    background-color: $background;
+}

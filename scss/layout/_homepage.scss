@@ -17,12 +17,13 @@
     }
 
     .section1{
-        grid-area: section1;
-        width: 100%;
-        background-color: #636AF2;
-        align-content:baseline;
-        font-size: 3.75rem;
-        border-radius: 2%;
+        @include grid(section1,2%,3.75rem,100%,#636AF2);
+        // grid-area: section1;
+        // width: 100%;
+        // background-color: #636AF2;
+        // align-content:baseline;
+        // font-size: 3.75rem;
+        // border-radius: 2%;
 
         a{
             transition: all;

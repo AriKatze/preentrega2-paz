@@ -68,17 +68,23 @@ footer a {
 }
 .homepage-grids .section1 {
   grid-area: section1;
-  border-radius: none;
-  font-size: 6.5rem;
+  border-radius: 3%;
+  font-size: 3.75rem;
   width: 100%;
-  align-content: center;
+  align-content: baseline;
   background-color: #636AF2;
-  height: 100%;
 }
-.homepage-grids .section1 p:hover {
-  border: none;
-  transition: 0.4s;
-  font-size: 7rem;
+.homepage-grids .section1 a {
+  transition: all;
+  transition-duration: 300ms;
+  text-decoration: none;
+}
+.homepage-grids .section1 a h2 {
+  text-decoration: none !important;
+  color: black;
+}
+.homepage-grids .section1 a:hover {
+  background-color: white;
 }
 .homepage-grids .section2 {
   grid-area: section2;
@@ -156,4 +162,4 @@ footer a {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=.css.map */

@@ -17,30 +17,17 @@
     }
 
     .section1{
-        @include grid(section1,2%,3.75rem,100%,#636AF2);
-        // grid-area: section1;
-        // width: 100%;
-        // background-color: #636AF2;
-        // align-content:baseline;
-        // font-size: 3.75rem;
-        // border-radius: 2%;
-
-        a{
-            transition: all;
-            transition-duration: 300ms;
-            text-decoration:none;
-            h2 {
-                text-decoration: none !important;
-                color: black;
-            }
-
-            &:hover {
-                background-color: white;
-            }
+        @include grid(section1,none,6.5rem,100%,center, #636AF2);
+        height: 100%;
+        p:hover {
+            // background-color: map-get($colors, white );
+            border: none;
+            transition: 0.4s;
+            font-size: 7rem;
         }
     }
     .section2{
-        grid-area: section2;
+        @include grid (section2, none, none,none,none,none);
     }
     .section2 img{
         width: 100%;

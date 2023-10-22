@@ -77,7 +77,6 @@ footer a {
   background-image: linear-gradient(to bottom, #636af2, #8085f6, #9b9ff9, #b6bafb, #d1d4fb);
 }
 .homepage-grids .section1 p:hover {
-  border: none;
   transition: 0.4s;
   font-size: 7rem;
 }
@@ -140,32 +139,36 @@ footer a {
   margin-bottom: 0.625rem;
 }
 
-@media (max-width: 425px) {
-  header .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header .navbar li a {
-    font-size: 1rem;
-  }
-  header .navbar .logo {
-    display: none;
-  }
-  .grids {
+@media (min-width: 320px) and (max-width: 425px) {
+  .homepage-grids {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "section1" "section2" "section3" "section5" "section6";
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
   }
   .section1 {
-    background-color: #636AF2;
+    grid-area: section1;
+    border-radius: none;
     font-size: auto;
-    border-radius: 0%;
+    width: 100%;
+    align-content: none;
+    background-color: #636AF2;
+  }
+  .section2 {
+    display: none;
+  }
+  .section3 {
+    display: none;
   }
   .section4 {
+    display: none;
+  }
+  .section5 {
+    display: none;
+  }
+  .section6 {
     display: none;
   }
 }

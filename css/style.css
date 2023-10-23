@@ -143,33 +143,63 @@ footer a {
   .homepage-grids {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 500px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
   }
-  .section1 {
+  .homepage-grids .section1 {
     grid-area: section1;
+    border-radius: none;
+    font-size: 5rem;
+    width: 100%;
+    align-content: center;
+    background-color: #636AF2;
+  }
+  .homepage-grids .section2 {
+    grid-area: section2;
     border-radius: none;
     font-size: auto;
     width: 100%;
     align-content: none;
-    background-color: #636AF2;
+    background-color: none;
   }
-  .section2 {
-    display: none;
+  .homepage-grids .section2 img {
+    height: 300px;
   }
-  .section3 {
-    display: none;
+  .homepage-grids .section3 {
+    grid-area: section3;
+    border-radius: none;
+    font-size: none;
+    width: none;
+    align-content: none;
+    background-color: none;
+    height: 70%;
   }
-  .section4 {
-    display: none;
+  .homepage-grids .section4 {
+    grid-area: section4;
+    border-radius: none;
+    font-size: none;
+    width: none;
+    align-content: none;
+    background-color: none;
+    height: 400px;
   }
-  .section5 {
-    display: none;
+  .homepage-grids .section5 {
+    grid-area: section6;
+    border-radius: none;
+    font-size: none;
+    width: none;
+    align-content: none;
+    background-color: none;
   }
-  .section6 {
-    display: none;
+  .homepage-grids .section6 {
+    grid-area: section5;
+    border-radius: none;
+    font-size: none;
+    width: none;
+    align-content: none;
+    background-color: none;
   }
 }
 

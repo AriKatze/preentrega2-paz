@@ -2,7 +2,7 @@
     .homepage-grids {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 500px);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
 
@@ -14,24 +14,30 @@
         "section5"
         "section6" 
         ;
-    }
-    .section1{
-        @include grid(section1,none, auto, 100%,none, #636AF2)
-    }
-    .section2 {
-        display: none;
-    }
-    .section3{
-        display: none;
-    }
+        .section1{
+            @include grid(section1,none, 5rem, 100%,center, #636AF2);
+            }
+            .section2 {
+            @include grid(section2,none, auto, 100%,none,none);
+            }
+            .section2 img{
+                height: 300px;
+            }
+            .section3{
+                @include grid (section3,none,none,none,none,none);
+                height:70%
+            }
+            
+            .section4{
+                @include grid (section4, none, none, none, none,none);
+                height: 400px
+            }
+            .section5{
+                @include grid (section6,none,none,none,none,none);
+            }
+            .section6{
+                @include grid (section5,none,none,none,none,none);;
+            }
+        }
+     }
     
-    .section4{
-        display: none;
-    }
-    .section5{
-        display: none;
-    }
-    .section6{
-        display: none;
-    }
-}

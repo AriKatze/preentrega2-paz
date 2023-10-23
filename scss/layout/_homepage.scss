@@ -1,57 +1,67 @@
-.homepage-grids{
+.homepage-grids {
     display: grid;
     width: 100%;
-    grid-template-columns:repeat(4, 1fr) ; /*12 cols max*/
-    grid-template-areas: 
-    "section1 section1 section2 section2"
-    "section3 section3 section4 section4"
-    "section5 section5 section6 section6" 
+    grid-template-columns: repeat(4, 1fr);
+    /*12 cols max*/
+    grid-template-areas:
+        "section1 section1 section2 section2"
+        "section3 section3 section4 section4"
+        "section5 section5 section6 section6"
     ;
     align-items: center;
     justify-content: center;
 
 
-    .main-banner-image{
+    .main-banner-image {
         width: 50%;
         margin-bottom: .625rem;
     }
 
-    .section1{
-        @include grid(section1,none,6.5rem,100%,center, #636AF2);
+    .section1 {
+        @include grid(section1, none, 6.5rem, 100%, center, #636AF2);
         height: 100%;
         background-image: linear-gradient(to bottom, #636af2, #8085f6, #9b9ff9, #b6bafb, #d1d4fb);
+
         p:hover {
             transition: 0.4s;
             font-size: 7rem;
         }
     }
-    .section2{
-        @include grid (section2, none, none,none,none,none);
+
+    .section2 {
+        @include grid (section2, none, none, none, none, none);
         height: 100%;
     }
-    .section2 img{
+
+    .section2 img {
         width: 100%;
         height: 100%;
-        border-radius:none;
+        border-radius: none;
     }
-    .section3{
-        @include grid (section3,2%,1rem,100%,none,none);
+
+    .section3 {
+        @include grid (section3, 2%, 1rem, 100%, none, none);
     }
-    .section4{
+
+    .section4 {
         grid-area: section4;
     }
-    .section4 img{
+
+    .section4 img {
         border-radius: 2%;
         width: 100%;
     }
-    .section5{
-        @include grid (section5,2%,1rem,100%,none,none);
+
+    .section5 {
+        @include grid (section5, 2%, 1rem, 100%, none, none);
     }
-    .section5 img{
+
+    .section5 img {
         width: 100%;
         border-radius: 2%;
     }
-    .section6{
-        @include grid (section6,2%,1rem,100%,none,none);
+
+    .section6 {
+        @include grid (section6, 2%, 1rem, 100%, none, none);
     }
 }

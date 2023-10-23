@@ -57,7 +57,8 @@ footer a {
 .homepage-grids {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 1fr); /*12 cols max*/
+  grid-template-columns: repeat(4, 1fr);
+  /*12 cols max*/
   grid-template-areas: "section1 section1 section2 section2" "section3 section3 section4 section4" "section5 section5 section6 section6";
   align-items: center;
   justify-content: center;

@@ -1,67 +1,97 @@
-.homepage-grids {
+.homepage {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    /*12 cols max*/
-    grid-template-areas:
-        "section1 section1 section2 section2"
-        "section3 section3 section4 section4"
-        "section5 section5 section6 section6"
-    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: repeat(3, 1fr);
+    height: auto;
     align-items: center;
     justify-content: center;
+    margin-left: 8rem;
+    margin-bottom: 8rem;
+    grid-template-areas: 
+    "a b"
+    "c c"
+    "d d"
+  }
 
+.clients-logos img {
+    width: 6rem;
+    margin-right: 1rem;
+  }
+  
+  .clients-logos {
+    margin-top: 4rem;
+  }
+  
+  .clients-logos img:nth-child(2) {
+    width: 5rem;
+    height: 3rem;
+  }
+  
 
-    .main-banner-image {
-        width: 50%;
-        margin-bottom: .625rem;
-    }
+  main h1 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+  
+  main p {
+    font-size: 2rem;
+    width: 35rem;
+    color: hsl(0, 0%, 41%);
+    line-height: 2rem;
+  }
+  
+  main button {
+    background-color: #636AF2;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+  }
+  
+  #text-side {
+    margin-top: 1rem;
+    grid-area: a;
+  }
+  .img-side{
+    margin-top: 0%;
+    grid-area: b;
+    margin-bottom: 10rem;
+    height:700px ;
+   
+   
+  }
+  .img-side img {
+    width: 100%;
+    height: 830px;
+    align-items: left;
+    
+  }
 
-    .section1 {
-        @include grid(section1, none, 6.5rem, 100%, center, #636AF2);
-        height: 100%;
-        background-image: linear-gradient(to bottom, #636af2, #8085f6, #9b9ff9, #b6bafb, #d1d4fb);
-
-        p:hover {
-            transition: 0.4s;
-            font-size: 7rem;
-        }
-    }
-
-    .section2 {
-        @include grid (section2, none, none, none, none, none);
-        height: 100%;
-    }
-
-    .section2 img {
-        width: 100%;
-        height: 100%;
-        border-radius: none;
-    }
-
-    .section3 {
-        @include grid (section3, 2%, 1rem, 100%, none, none);
-    }
-
-    .section4 {
-        grid-area: section4;
-    }
-
-    .section4 img {
-        border-radius: 2%;
-        width: 100%;
-    }
-
-    .section5 {
-        @include grid (section5, 2%, 1rem, 100%, none, none);
-    }
-
-    .section5 img {
-        width: 100%;
-        border-radius: 2%;
-    }
-
-    .section6 {
-        @include grid (section6, 2%, 1rem, 100%, none, none);
-    }
+.page-cards{
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+   
 }
+.page-cards div p{
+font-size: 1rem;
+}
+
+.homepage_card_container{
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: d;
+}
+.homepage_card_container div div a img{
+    height: 500px;
+    width: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+

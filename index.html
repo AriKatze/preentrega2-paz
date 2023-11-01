@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -18,7 +19,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
           <div class="logo">
-            <img src="./assets/coin.png" alt="mylogo">
+            <img src="./assets/logo2.svg" alt="mylogo">
           </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -44,29 +45,78 @@
       </div>
     </nav>
   </header>
-  <main class="homepage-grids">
-    <section class="section1">
-      <a href="./pages/products.html"></a>
-      <p class="animate__animated animate__pulse">Make your money GROW </p>
+  <main class="homepage">
+    <section id="text-side">
+      <h1>Make your money <br /> GROW </h1>
+      <p>
+        Get the most of your monthly income and start building up wealth.
+      </p>
+      <button>Learn more</button>
+      <div class="clients-logos">
+        <div>
+          <p>as seen on:</p>
+        </div>
+        <img src="./assets/economist-logo.png" />
+        <img src="./assets/finantialtimes-logo.jpeg" />
+        <img src="./assets/bloomberg-logo.png" />
+        <img src="./assets/google-finance.png" />
+      </div>
     </section>
-    <section class="section2">
-      <img class="main-banner-image" src="./assets/global-weatlh-1.jpeg" alt="Benjamin Franklin eye" />
+    <section class="img-side">
+      <img src="./assets/Dollars.jpg" />
     </section>
-    <section class="section3">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>Sed fermentum orci mollis volutpat consequat feugiat morbi malesuada.</p>
-    </section>
-    <section class="section4">
-      <img src="./assets/section2.png" alt="Some laptop">
-    </section>
-    <section class="section5">
-      <img src="./assets/section3.png" alt="some other laptop">
 
+    <div class="page-cards" data-aos="fade-in" data-aos-duration="500" data-aos-delay="100">
+        <div class="content-wrap1">
+          <h2>Where is your money going?</h2>
+          <p >Having a monthly and yearly budget offers a myriad of benefits for individuals
+            and households alike.
+            A monthly budget provides a detailed snapshot of your finances,
+            enabling you to track and manage your expenses, income, and savings on a short-term basis.
+            It empowers you to make informed financial decisions, avoid overspending, and achieve your short-term
+            financial goals.</p>
+          </div>
+          <div class="content-wrap2">
+          <h2>How much are you spending?</h2>
+          <p >You can set and track a spending target for individual categories. We provide a system to breakdown of your spending and balance over time, giving you
+            helpful insigts into how you spend your money each month.<br>
+            You can use a specific templete for every need:  a downpayment, holiday savings, renovations, etc
+          </p>
+          </div>
+      </div>
+
+    <div class="homepage_card_container">
+      <div class="card1 aos-init aos-animate" data-aos="fade-in" data-aos-duration="500" data-aos-delay="20">
+        <div class="page-card-square"><a href="./pages/products.html"><img alt="OurProducts"
+              src="./assets/section3.png">
+        </div>
+      </div>
+      <div class="card2" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
+        <div class="page-card-square"><a href="./pages/products.html"><img alt="Generative AI"
+              src="./assets/section2.png"></div>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- <section class="second-section">
+      <img src="./assets/section2.png" />
+    </section> -->
+    <!-- <section class="first-section">
+      <div><h2>Track your money</h2>
+        <p>Having a monthly and yearly budget offers a myriad of benefits for individuals and households alike. A monthly budget provides a detailed snapshot of your finances, enabling you to track and manage your expenses, income, and savings on a short-term basis. It empowers you to make informed financial decisions, avoid overspending, and achieve your short-term financial goals.</div>
     </section>
-    <section class="section6">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>Sed fermentum orci mollis volutpat consequat feugiat morbi malesuada.</p>
-    </section>
+    <section class="second-section">
+      <img src="./assets/section2.png" />
+    </section> -->
+    <!-- <section class="third-section"></section> -->
+    <!-- <section class="forth-section"></section>  -->
+
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -74,6 +124,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 <footer id="footer">
   <div>

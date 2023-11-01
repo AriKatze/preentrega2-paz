@@ -3,4 +3,33 @@
         background-color: #636AF2;
         height: 7rem;
     } 
+    .gm-links-carousel-images {
+        padding: clamp(7.5rem,7.5rem + ((1vw - .48rem)*9.4937),11.25rem) 0;
+        overflow: hidden
+    }
+    
+    .gm-links-carousel-images__heading {
+        max-width: min(100% - clamp(3.125rem,3.125rem + ((1vw - .48rem)*17.4051),10rem),840px);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: clamp(3.125rem,3.125rem + ((1vw - .48rem)*6.3291),5.625rem);
+        visibility: hidden
+    }
+    
+    .gm-links-carousel-images__container {
+        max-width: min(100% - clamp(3.125rem,3.125rem + ((1vw - .48rem)*17.4051),10rem),1280px);
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: clamp(3.125rem,3.125rem + ((1vw - .48rem)*6.3291),5.625rem);
+        visibility: hidden
+    }
+    
+    .gm-links-carousel-images__select {
+        width: 100%
+    }
 }
+    

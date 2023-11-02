@@ -36,34 +36,36 @@ body {
   font-family: "Roboto", normal;
 }
 
-.about-us .common {
-  background-color: #636AF2;
-  height: 7rem;
+.aboutUs {
+  display: grid;
+  grid-template-rows: 2, 1fr;
+  grid-template-columns: 2, 1fr;
+  justify-content: center;
+  grid-template-areas: "a a" "b c";
 }
-.about-us .gm-links-carousel-images {
-  padding: clamp(7.5rem, 7.5rem + (1vw - 0.48rem) * 9.4937, 11.25rem) 0;
-  overflow: hidden;
+
+.aboutus-heading {
+  grid-area: a;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
 }
-.about-us .gm-links-carousel-images__heading {
-  max-width: min(100% - clamp(3.125rem, 3.125rem + (1vw - 0.48rem) * 17.4051, 10rem), 840px);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: clamp(3.125rem, 3.125rem + (1vw - 0.48rem) * 6.3291, 5.625rem);
-  visibility: hidden;
+
+.aboutus-description {
+  grid-area: b;
 }
-.about-us .gm-links-carousel-images__container {
-  max-width: min(100% - clamp(3.125rem, 3.125rem + (1vw - 0.48rem) * 17.4051, 10rem), 1280px);
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: clamp(3.125rem, 3.125rem + (1vw - 0.48rem) * 6.3291, 5.625rem);
-  visibility: hidden;
+
+.aboutus-description p {
+  font-size: 16px;
 }
-.about-us .gm-links-carousel-images__select {
-  width: 100%;
+
+.aboutusimage {
+  grid-area: c;
+  margin-left: 5rem;
+  margin-bottom: 10rem;
+}
+
+.aboutusimage img {
+  height: 500px;
 }
 
 footer {

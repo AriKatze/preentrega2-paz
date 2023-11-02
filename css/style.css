@@ -297,64 +297,75 @@ main button {
   margin-bottom: 3rem;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 500px) {
   .homepage {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 500px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-areas: "a" "b" "c" "d" "e" "f";
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 2rem;
+    grid-template-areas: "a" "b" "c" "d";
   }
-  .homepage .clients-logos {
-    margin-top: 2rem;
-    display: block;
-  }
-  .homepage #text-side {
-    display: none;
+  .homepage .text-side {
+    height: 300px;
+    width: 100%;
     margin-top: 1rem;
     grid-area: a;
   }
-  .homepage #text-side main h1 {
+  .homepage .text-side h1 {
     font-size: 2rem;
-    font-weight: 500;
   }
-  .homepage #text-side main p {
+  .homepage .text-side p {
     font-size: 1rem;
     width: 200px;
     color: hsl(0, 0%, 41%);
     line-height: 1rem;
   }
+  .homepage .text-side .clients-logos img {
+    width: 4rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .homepage .text-side img:nth-child(2) {
+    width: 4rem;
+    height: 2rem;
+  }
+  .homepage .text-side button {
+    font-size: 1 rem;
+  }
   .homepage .img-side {
-    display: none;
-    margin-top: 0%;
+    margin-top: 1rem;
     grid-area: b;
-    margin-bottom: 3rem;
-    height: 300px;
+    height: 550px;
+    width: 100%;
+    margin-bottom: 0;
   }
   .homepage .img-side img {
-    width: 200px;
-    height: 300px;
-    align-items: left;
+    width: 100%;
+    height: 90%;
   }
   .homepage .page-cards {
+    display: contents;
+    margin-top: 0;
     margin-bottom: 3rem;
-    margin-top: 5rem;
+    width: 300px;
+  }
+  .homepage .page-cards h2 {
+    margin-bottom: 2rem;
+  }
+  .homepage .page-cards p {
+    width: 350px;
+    font-size: 14px;
   }
   .homepage .page-cards .content-wrap1 {
     grid-area: c;
+    margin-bottom: 0;
   }
   .homepage .page-cards .content-wrap2 {
-    grid-area: e;
+    grid-area: d;
+    margin-top: 1rem;
   }
-  .homepage .page-cards .page-cards div p {
-    font-size: 1rem;
-  }
-  .homepage .page-cards .homepage_card_container .page-card-square {
+  .homepage .homepage_card_container {
     display: none;
-  }
-  .homepage .page-cards .homepage_card_container .card1 {
-    display: none;
+    margin-bottom: 0;
   }
 }
 

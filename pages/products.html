@@ -1,91 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <div class="logo">
-              <img src="../assets/coin.png" alt="">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <div class="logo">
+            <img src="../assets/logo1.svg" alt="">
           </div>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="products.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="aboutUs.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="aboutUs.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <main class="products">
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Product-1</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic voluptatum laboriosam, quos repellendus, quis architecto excepturi nisi ad ipsa, pariatur quod</p>
-                      <a href="#" class="btn btn-primary">Buy</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Product-2</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic voluptatum laboriosam, quos repellendus, quis architecto excepturi nisi ad ipsa, pariatur quod</p>
-                      <a href="#" class="btn btn-primary">Buy</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Product-3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic voluptatum laboriosam, quos repellendus, quis architecto excepturi nisi ad ipsa, pariatur quod</p>
-                        <a href="#" class="btn btn-primary">Buy</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Product-4</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic voluptatum laboriosam, quos repellendus, quis architecto excepturi nisi ad ipsa, pariatur quod</p>
-                        <a href="#" class="btn btn-primary">Buy</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="products-cards">
+      <div class="products-intro" data-aos="fade-right" data-aos-duration="2000">
+        <h1>Simple. Fast.  Easy.</h1>
+      </div>
+      <div class="product1" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="100">
+        <h5 class="card-title">Monthly Budget Tracker Template</h5>
+        <p class="card-text">
+          This template is designed to help individuals manage their monthly finances efficiently.
+          It provides a user-friendly interface for tracking both income and expenses.
+          Users can input their sources of income and categorize their expenses, such as bills, groceries, and
+          entertainment.
+          The template automatically calculates totals and generates visual representations like charts and graphs to
+          visualize spending patterns.
+          It's an excellent tool for individuals looking to gain better control over their monthly financial activities
+          and make informed decisions about their spending habits.
+          <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+
+      <div class="product2" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+        <h5 class="card-title">Multi-Year Financial Tracker</h5>
+        <p class="card-text">This digital product is an extended version of the Monthly Budget Tracker, designed for
+          long-term financial planning.
+          Users can input their income and expenses over multiple years, allowing them to forecast and analyze their
+          financial trends over time.
+          It's a valuable resource for individuals who want to set long-term financial goals, like saving for a major
+          purchase, planning for retirement, or monitoring investment portfolios.
+          The product provides insights into how financial decisions impact future stability and helps users make
+          informed choices to secure their financial future.</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+
+      <div class="product3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+        <h5 class="card-title">Mortgage Down Payment Savings App:</h5>
+        <p class="card-text">This digital product focuses on helping people save for one of the most significant
+          financial milestones: a mortgage down payment.
+          It offers personalized savings plans, taking into account a user's income, expenses, and financial goals.
+          Users can set target down payment amounts and track their progress.
+          The app can also suggest various strategies, such as automating savings or adjusting spending habits, to meet
+          the down payment goal efficiently.
+          It's an indispensable tool for aspiring homeowners looking to achieve their homeownership dreams</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+
+      <div class="product4" data-aos="fade-in" data-aos-duration="500" data-aos-delay="100">
+        <h5 class="card-title">Pension Tracker and Planner</h5>
+        <p class="card-text">Designed to ensure a secure retirement, this digital product helps users manage their
+          pension and retirement savings.
+          Users can input details about their pension contributions, retirement accounts, and projected income sources.
+          The product provides visual summaries and projections of their retirement finances, including estimated
+          retirement age and the potential lifestyle they can afford.
+          It also offers retirement planning advice and options to optimize pension contributions. With this tool,
+          individuals can take control of their retirement planning, make informed decisions, and ensure a financially
+          stable retirement phase.</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+      <div class="product1-image">
+        <img src="../assets/Money-background.jpg" alt="">
+      </div>
+      <div class="product2-image">
+        <img src="../assets/savings1.jpg" alt="">
+      </div>
+
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 <footer id="footer">
-    <div>
-        <div><a href="./aboutUs.html">About us</a></div>
-        <div><a href="./products.html">Products</a></div>
-        <div><a href="./FAQ.html">FAQ</a></div>
-    </div>
+  <div>
+    <div><a href="./aboutUs.html">About us</a></div>
+    <div><a href="./products.html">Products</a></div>
+    <div><a href="./FAQ.html">FAQ</a></div>
+  </div>
 </footer>
+
 </html>

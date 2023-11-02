@@ -298,66 +298,63 @@ main button {
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
-  .homepage-grids {
+  .homepage {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 500px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
+    grid-template-areas: "a" "b" "c" "d" "e" "f";
   }
-  .homepage-grids .section1 {
-    grid-area: section1;
-    border-radius: none;
-    font-size: 5rem;
-    width: 100%;
-    align-content: center;
-    background-color: #636AF2;
+  .homepage .clients-logos {
+    margin-top: 2rem;
+    display: block;
   }
-  .homepage-grids .section2 {
-    grid-area: section2;
-    border-radius: none;
-    font-size: auto;
-    width: 100%;
-    align-content: none;
-    background-color: none;
+  .homepage #text-side {
+    display: none;
+    margin-top: 1rem;
+    grid-area: a;
   }
-  .homepage-grids .section2 img {
+  .homepage #text-side main h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .homepage #text-side main p {
+    font-size: 1rem;
+    width: 200px;
+    color: hsl(0, 0%, 41%);
+    line-height: 1rem;
+  }
+  .homepage .img-side {
+    display: none;
+    margin-top: 0%;
+    grid-area: b;
+    margin-bottom: 3rem;
     height: 300px;
   }
-  .homepage-grids .section3 {
-    grid-area: section3;
-    border-radius: none;
-    font-size: none;
-    width: none;
-    align-content: none;
-    background-color: none;
-    height: 70%;
+  .homepage .img-side img {
+    width: 200px;
+    height: 300px;
+    align-items: left;
   }
-  .homepage-grids .section4 {
-    grid-area: section4;
-    border-radius: none;
-    font-size: none;
-    width: none;
-    align-content: none;
-    background-color: none;
-    height: 400px;
+  .homepage .page-cards {
+    margin-bottom: 3rem;
+    margin-top: 5rem;
   }
-  .homepage-grids .section5 {
-    grid-area: section6;
-    border-radius: none;
-    font-size: none;
-    width: none;
-    align-content: none;
-    background-color: none;
+  .homepage .page-cards .content-wrap1 {
+    grid-area: c;
   }
-  .homepage-grids .section6 {
-    grid-area: section5;
-    border-radius: none;
-    font-size: none;
-    width: none;
-    align-content: none;
-    background-color: none;
+  .homepage .page-cards .content-wrap2 {
+    grid-area: e;
+  }
+  .homepage .page-cards .page-cards div p {
+    font-size: 1rem;
+  }
+  .homepage .page-cards .homepage_card_container .page-card-square {
+    display: none;
+  }
+  .homepage .page-cards .homepage_card_container .card1 {
+    display: none;
   }
 }
 

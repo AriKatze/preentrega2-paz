@@ -276,6 +276,27 @@ main button {
   margin-bottom: 8rem;
 }
 
+.faqintro {
+  margin-left: 3rem;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.faqintro h1 {
+  font-size: 3rem;
+}
+
+.faqimage img {
+  width: 700px;
+  height: 500px;
+  margin-left: 32rem;
+  margin-bottom: 3rem;
+}
+
+.accordion {
+  margin-bottom: 3rem;
+}
+
 @media (min-width: 320px) and (max-width: 425px) {
   .homepage-grids {
     display: grid;
